@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://c7u5f5lr3klio"]
+
+[ext_resource type="Texture2D" uid="uid://cwa8eis7ny6ya" path="res://Brown Off.png" id="1_0qq12"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0qq12"]
+size = Vector2(32, 3)
+
+[node name="palaka" type="StaticBody2D"]
+collision_layer = 255
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_0qq12")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_0qq12")
+one_way_collision = true
